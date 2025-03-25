@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Appointment Booking</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div class="booking-card">
+            <h1>Book an Appointment</h1>
+            <form id="appointmentForm">
+                <div class="input-group">
+                    <input type="text" id="name" placeholder="Enter Your Name" required>
+                    <div class="input-highlight"></div>
+                </div>
+                
+                <div class="input-group">
+                    <input type="tel" id="mobile" placeholder="Enter Mobile Number" required>
+                    <div class="input-highlight"></div>
+                </div>
+                
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Enter Email ID" required>
+                    <div class="input-highlight"></div>
+                </div>
+                
+                <div class="input-group">
+                    <input type="number" id="age" placeholder="Enter Age" required>
+                    <div class="input-highlight"></div>
+                </div>
+                
+                <div class="input-group">
+                    <select id="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="input-highlight"></div>
+                </div>
+                
+                <div class="input-group">
+                    <input type="datetime-local" id="appointmentTime" required>
+                    <div class="input-highlight"></div>
+                </div>
+                
+                <button type="submit" class="btn-book">Book Appointment</button>
+            </form>
+        </div>
+        
+        <div class="appointments-section">
+            <h2>Upcoming Appointments</h2>
+            <div id="appointmentsList" class="appointments-list">
+                <!-- Appointments will be added here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
